@@ -55,3 +55,27 @@
 
 <img width="609" height="310" alt="image" src="https://github.com/user-attachments/assets/d92dbf41-4e66-4515-9139-a16da5b1a03a" />
 
+#### Тест задачи 1
+
+<img width="580" height="103" alt="image" src="https://github.com/user-attachments/assets/5bc9e021-f2d0-4d54-b429-12f00e161fda" />
+
+## Задание 4
+
+### Задача 1
+
+<img width="472" height="61" alt="image" src="https://github.com/user-attachments/assets/7c60dcfa-9308-4dd6-95ed-27e9c797c2f9" />
+
+#### Тест задачи 1
+
+<img width="608" height="109" alt="image" src="https://github.com/user-attachments/assets/2cc981f2-7ebd-45c2-8699-fed0a38cfbaf" />
+
+## Задание 5
+
+### Задача 1
+
+<img width="610" height="156" alt="image" src="https://github.com/user-attachments/assets/313c7bfb-af91-4543-9119-a370a0ac8733" />
+
+#### Тест задачи 1
+
+<img width="697" height="125" alt="image" src="https://github.com/user-attachments/assets/06a59251-3eb4-4d44-ae4b-03020a16f960" />
+
