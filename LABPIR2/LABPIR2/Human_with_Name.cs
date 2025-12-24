@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Lab2
 {
@@ -11,26 +11,50 @@ namespace Lab2
 
         public int Hight
         {
-            get { return hight; }
-            set { hight = value; }
+            get 
+            { 
+                return hight; 
+            }
+            set 
+            { 
+                hight = value; 
+            }
         }
 
         public string Name
         {
-            get { return name; }
-            set { name = value; }
+            get 
+            { 
+                return name; 
+            }
+            set 
+            { 
+                name = value; 
+            }
         }
 
         public string Last_Name
         {
-            get { return last_name; }
-            set { last_name = value; }
+            get 
+            { 
+                return last_name; 
+            }
+            set 
+            { 
+                last_name = value; 
+            }
         }
 
         public string Middle_Name
         {
-            get { return middle_name; }
-            set { middle_name = value; }
+            get 
+            { 
+                return middle_name; 
+            }
+            set 
+            { 
+                middle_name = value; 
+            }
         }
 
         public Human_with_Name(int hight, string name, string last_name, string middle_name)
