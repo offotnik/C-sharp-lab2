@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -6,7 +6,11 @@ namespace Lab2
 {
     internal class Polyline
     {
-        public List<Point> Points { get; set; }
+        public List<Point> Points 
+        { 
+            get; 
+            set; 
+        }
 
         public Polyline()
         {
