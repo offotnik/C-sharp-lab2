@@ -6,31 +6,33 @@ namespace Lab2
 {
     internal class Polyline
     {
-        public List<Point> Points 
-        { 
-            get; 
-            set; 
+        private List<Point> _points;
+
+        public List<Point> Points
+        {
+            get { return _points; }
+            set { _points = value; }
         }
 
         public Polyline()
         {
-            Points = new List<Point>();
+            _points = new List<Point>();
         }
 
         public Polyline(IEnumerable<Point> points)
         {
-            Points = new List<Point>(points);
+            _points = new List<Point>(points);
         }
 
         public override string ToString()
         {
-            var pointsString = string.Join(", ", Points.Select(p => p.ToString()));
+            var pointsString = string.Join(", ", _points.Select(p => p.ToString()));
             return $"Линия [{pointsString}]";
         }
 
         public void Shift(double deltaX, double deltaY)
         {
-            foreach (var point in Points)
+            foreach (var point in _points)
             {
                 point.X += deltaX;
                 point.Y += deltaY;
@@ -39,12 +41,12 @@ namespace Lab2
 
         public void ShiftStart(double newX, double newY)
         {
-            if (Points.Count == 0)
+            if (_points.Count == 0)
             {
                 return;
             }
 
-            var firstPoint = Points[0];
+            var firstPoint = _points[0];
             double deltaX = newX - firstPoint.X;
             double deltaY = newY - firstPoint.Y;
 
