@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Lab2
 {
@@ -9,14 +9,26 @@ namespace Lab2
 
         public double X
         {
-            get { return x; }
-            set { x = value; }
+            get 
+            { 
+                return x; 
+            }
+            set 
+            { 
+                x = value; 
+            }
         }
 
         public double Y
         {
-            get { return y; }
-            set { y = value; }
+            get 
+            { 
+                return y; 
+            }
+            set 
+            { 
+                y = value; 
+            }
         }
 
         public Point(double x, double y)
