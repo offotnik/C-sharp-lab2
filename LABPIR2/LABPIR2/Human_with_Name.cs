@@ -4,65 +4,41 @@ namespace Lab2
 {
     internal class Human_with_Name
     {
-        private int hight;
-        private string name;
-        private string last_name;
-        private string middle_name;
+        private int _hight;
+        private string _name;
+        private string _last_name;
+        private string _middle_name;
 
         public int Hight
         {
-            get 
-            { 
-                return hight; 
-            }
-            set 
-            { 
-                hight = value; 
-            }
+            get { return _hight; }
+            set { _hight = value; }
         }
 
         public string Name
         {
-            get 
-            { 
-                return name; 
-            }
-            set 
-            { 
-                name = value; 
-            }
+            get { return _name; }
+            set { _name = value; }
         }
 
         public string Last_Name
         {
-            get 
-            { 
-                return last_name; 
-            }
-            set 
-            { 
-                last_name = value; 
-            }
+            get { return _last_name; }
+            set { _last_name = value; }
         }
 
         public string Middle_Name
         {
-            get 
-            { 
-                return middle_name; 
-            }
-            set 
-            { 
-                middle_name = value; 
-            }
+            get { return _middle_name; }
+            set { _middle_name = value; }
         }
 
         public Human_with_Name(int hight, string name, string last_name, string middle_name)
         {
-            this.name = name;
-            this.last_name = last_name;
-            this.middle_name = middle_name;
-            this.hight = hight;
+            _name = name;
+            _last_name = last_name;
+            _middle_name = middle_name;
+            _hight = hight;
         }
 
         public override string ToString()
@@ -74,9 +50,9 @@ namespace Lab2
 
         private int DetermineSituation()
         {
-            bool nameIsEmpty = string.IsNullOrEmpty(name);
-            bool lastNameIsEmpty = string.IsNullOrEmpty(last_name);
-            bool middleNameIsEmpty = string.IsNullOrEmpty(middle_name);
+            bool nameIsEmpty = string.IsNullOrEmpty(_name);
+            bool lastNameIsEmpty = string.IsNullOrEmpty(_last_name);
+            bool middleNameIsEmpty = string.IsNullOrEmpty(_middle_name);
 
             if (nameIsEmpty && lastNameIsEmpty && middleNameIsEmpty)
             {
@@ -121,19 +97,19 @@ namespace Lab2
             switch (situation)
             {
                 case 0:
-                    return $"Человек с именем {last_name} {name} {middle_name} и ростом {hight}";
+                    return $"Человек с именем {_last_name} {_name} {_middle_name} и ростом {_hight}";
                 case 1:
-                    return $"Человек с именем {last_name} {middle_name} и ростом {hight}";
+                    return $"Человек с именем {_last_name} {_middle_name} и ростом {_hight}";
                 case 2:
-                    return $"Человек с именем {name} {middle_name} и ростом {hight}";
+                    return $"Человек с именем {_name} {_middle_name} и ростом {_hight}";
                 case 3:
-                    return $"Человек с именем {last_name} {name} и ростом {hight}";
+                    return $"Человек с именем {_last_name} {_name} и ростом {_hight}";
                 case 4:
-                    return $"Человек с именем {name} и ростом {hight}";
+                    return $"Человек с именем {_name} и ростом {_hight}";
                 case 5:
-                    return $"Человек с именем {middle_name} и ростом {hight}";
+                    return $"Человек с именем {_middle_name} и ростом {_hight}";
                 case 6:
-                    return $"Человек с именем {last_name} и ростом {hight}";
+                    return $"Человек с именем {_last_name} и ростом {_hight}";
                 case 7:
                     return "Вы ничего не написали";
                 default:
