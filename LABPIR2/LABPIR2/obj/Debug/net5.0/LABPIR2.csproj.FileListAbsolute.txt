@@ -1,0 +1,16 @@
+C:\Users\user\source\repos\LABPIR2\LABPIR2\bin\Debug\net5.0\LABPIR2.exe
+C:\Users\user\source\repos\LABPIR2\LABPIR2\bin\Debug\net5.0\LABPIR2.deps.json
+C:\Users\user\source\repos\LABPIR2\LABPIR2\bin\Debug\net5.0\LABPIR2.runtimeconfig.json
+C:\Users\user\source\repos\LABPIR2\LABPIR2\bin\Debug\net5.0\LABPIR2.runtimeconfig.dev.json
+C:\Users\user\source\repos\LABPIR2\LABPIR2\bin\Debug\net5.0\LABPIR2.dll
+C:\Users\user\source\repos\LABPIR2\LABPIR2\bin\Debug\net5.0\ref\LABPIR2.dll
+C:\Users\user\source\repos\LABPIR2\LABPIR2\bin\Debug\net5.0\LABPIR2.pdb
+C:\Users\user\source\repos\LABPIR2\LABPIR2\obj\Debug\net5.0\LABPIR2.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\LABPIR2\LABPIR2\obj\Debug\net5.0\LABPIR2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\LABPIR2\LABPIR2\obj\Debug\net5.0\LABPIR2.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\LABPIR2\LABPIR2\obj\Debug\net5.0\LABPIR2.AssemblyInfo.cs
+C:\Users\user\source\repos\LABPIR2\LABPIR2\obj\Debug\net5.0\LABPIR2.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\LABPIR2\LABPIR2\obj\Debug\net5.0\LABPIR2.dll
+C:\Users\user\source\repos\LABPIR2\LABPIR2\obj\Debug\net5.0\ref\LABPIR2.dll
+C:\Users\user\source\repos\LABPIR2\LABPIR2\obj\Debug\net5.0\LABPIR2.pdb
+C:\Users\user\source\repos\LABPIR2\LABPIR2\obj\Debug\net5.0\LABPIR2.genruntimeconfig.cache

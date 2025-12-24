@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "LABPIR2/1.0.0": {
+        "runtime": {
+          "LABPIR2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LABPIR2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
