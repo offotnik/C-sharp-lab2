@@ -6,46 +6,52 @@ namespace Lab2
 {
     internal class SecondUPDPolyline
     {
-        public List<Point> Points { get; private set; }
+        private List<Point> _points;
+
+        public List<Point> Points
+        {
+            get { return _points; }
+            private set { _points = value; }
+        }
 
         public SecondUPDPolyline()
         {
-            Points = new List<Point>();
+            _points = new List<Point>();
         }
 
         public SecondUPDPolyline(IEnumerable<Point> points)
         {
-            Points = new List<Point>(points);
+            _points = new List<Point>(points);
         }
 
         public SecondUPDPolyline(params Point[] points)
         {
-            Points = new List<Point>(points);
+            _points = new List<Point>(points);
         }
 
         public override string ToString()
         {
-            if (Points == null || Points.Count == 0)
+            if (_points == null || _points.Count == 0)
             {
                 return "Линия []";
             }
 
-            var pointsString = string.Join(", ", Points.Select(p => p.ToString()));
+            var pointsString = string.Join(", ", _points.Select(p => p.ToString()));
             return $"Линия [{pointsString}]";
         }
 
         public double GetLength()
         {
-            if (Points.Count < 2)
+            if (_points.Count < 2)
             {
                 return 0;
             }
 
             double totalLength = 0;
 
-            for (int i = 1; i < Points.Count; i++)
+            for (int i = 1; i < _points.Count; i++)
             {
-                totalLength += Points[i].DistanceTo(Points[i - 1]);
+                totalLength += _points[i].DistanceTo(_points[i - 1]);
             }
 
             return totalLength;
@@ -55,20 +61,20 @@ namespace Lab2
         {
             if (point != null)
             {
-                Points.Add(point);
+                _points.Add(point);
             }
         }
 
         public void AddPoint(double x, double y)
         {
-            Points.Add(new Point(x, y));
+            _points.Add(new Point(x, y));
         }
 
         public void AddPoints(Point[] points)
         {
             if (points != null)
             {
-                Points.AddRange(points);
+                _points.AddRange(points);
             }
         }
 
@@ -76,13 +82,13 @@ namespace Lab2
         {
             if (points != null)
             {
-                Points.AddRange(points);
+                _points.AddRange(points);
             }
         }
 
         public void Shift(double deltaX, double deltaY)
         {
-            foreach (var point in Points)
+            foreach (var point in _points)
             {
                 point.X += deltaX;
                 point.Y += deltaY;
@@ -91,12 +97,12 @@ namespace Lab2
 
         public void ShiftStart(double newX, double newY)
         {
-            if (Points.Count == 0)
+            if (_points.Count == 0)
             {
                 return;
             }
 
-            var firstPoint = Points[0];
+            var firstPoint = _points[0];
             double deltaX = newX - firstPoint.X;
             double deltaY = newY - firstPoint.Y;
 
