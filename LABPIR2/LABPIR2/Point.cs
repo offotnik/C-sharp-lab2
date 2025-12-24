@@ -4,37 +4,25 @@ namespace Lab2
 {
     internal class Point
     {
-        private double x;
-        private double y;
+        private double _x;
+        private double _y;
 
         public double X
         {
-            get 
-            { 
-                return x; 
-            }
-            set 
-            { 
-                x = value; 
-            }
+            get { return _x; }
+            set { _x = value; }
         }
 
         public double Y
         {
-            get 
-            { 
-                return y; 
-            }
-            set 
-            { 
-                y = value; 
-            }
+            get { return _y; }
+            set { _y = value; }
         }
 
         public Point(double x, double y)
         {
-            this.x = x;
-            this.y = y;
+            _x = x;
+            _y = y;
         }
 
         public override string ToString()
