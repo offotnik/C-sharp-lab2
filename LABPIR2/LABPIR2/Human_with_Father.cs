@@ -1,46 +1,43 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Lab2
 {
-    internal class Human_with_Father : Human_with_Name // через двоиточие показываем что наш класс является потомком класса Human_with_Name
+    internal class Human_with_Father : Human_with_Name
     {
-        private Human_with_Father father;
+        private Human_with_Father _father;
 
         public Human_with_Father Father
         {
-            get 
-            { 
-                return father; 
-            }
-            set 
-            { 
-                father = value; 
-            }
+            get { return _father; }
+            set { _father = value; }
         }
 
-        public Human_with_Father(int hight, string name, string last_name, string middle_name, Human_with_Father father = null)
-            : base(hight, name, last_name, middle_name)// через base мы используем возможности конструктора родительского класса
+        public Human_with_Father(
+            int hight,
+            string name,
+            string last_name,
+            string middle_name,
+            Human_with_Father father = null
+        ) : base(hight, name, last_name, middle_name)
         {
-            this.father = father;
+            _father = father;
             ApplyFathersInfo();
         }
 
         private void ApplyFathersInfo()
         {
-            if (father != null)
+            if (_father != null)
             {
-                if (string.IsNullOrEmpty(base.Last_Name) && !string.IsNullOrEmpty(father.Last_Name))
+                if (string.IsNullOrEmpty(base.Last_Name) &&
+                    !string.IsNullOrEmpty(_father.Last_Name))
                 {
-                    base.Last_Name = father.Last_Name;
+                    base.Last_Name = _father.Last_Name;
                 }
 
-                if (string.IsNullOrEmpty(base.Middle_Name) && !string.IsNullOrEmpty(father.Name))
+                if (string.IsNullOrEmpty(base.Middle_Name) &&
+                    !string.IsNullOrEmpty(_father.Name))
                 {
-                    base.Middle_Name = father.Name + "ович";
+                    base.Middle_Name = _father.Name + "ович";
                 }
             }
         }
